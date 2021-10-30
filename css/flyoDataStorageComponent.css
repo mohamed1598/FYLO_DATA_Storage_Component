@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+html,body{
+    font-size: 23px;
+    width: 100%;
+    height: 100%;
+}
+.row{
+    padding: 16.5% 12%;
+}
+.container{
+    background: url(../images/bg-desktop.png) bottom no-repeat;
+    background-color: #0C122C;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+[class*="col-"] {
+    margin:0 1rem;
+    background-color: #1E2C69;
+}
+.col-4{
+    border-radius: 20px 37% 20px 20px;
+    padding: 5% 10% 5% 5%;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.icon{
+    /* padding: 10%; */
+    padding-top: 8%;
+    padding-bottom: 6%;
+    padding-left: 3%;
+    padding-right: 5%;
+    margin-top: 15%;
+    width: 30%;
+    background-color:#0B132B ;
+    text-align: center;
+    border-radius: 7px;
+}
+.icon image{
+    display: block;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+}
+.relativePosition{
+    position: relative;
+    padding: 5% 3%;
+    border-radius: 20px;
+}
+.top{
+    position: absolute;
+    right: 4%;
+    padding: 4%;
+    border-radius: 20px;
+    top:-3rem;
+    width: 40%;
+    background-color: white;
+}
+h1{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+span{
+    font-weight: 700;
+    color: hsl(229, 7%, 55%);
+}
+p{
+    font-weight: 400;
+    color: #ccc;
+}
+p span{
+    color: white;
+}
+meter{
+    width: 90%;
+    height: 32px;
+    margin:auto;
+    display: block;
+    border-width: 0;
+}
+meter::-webkit-meter-optimum-value{
+    background: rgb(255,163,153);
+    background: linear-gradient(258deg, rgba(255,163,153,1) 0%, rgba(255,77,151,1) 100%);
+}
+.bottom div{
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+@media only screen and (max-width: 992px){
+    .row{
+        
+        padding-top: 8rem;
+    }
+    .top{
+        width: 60%;
+        font-size: 15px;
+        top:-1.5rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    
+    .container{
+        background: url(../images/bg-mobile.png) bottom no-repeat;
+        background-size: 100%;
+    }
+    [class*="col-"]{
+        margin:0;
+    }
+    .col-6{
+        margin-top: 4rem;
+    }
+    .row{
+        padding: 1rem;
+        
+    }
+    .top{
+        width: 60%;
+        top:90%;
+        padding: 1%;
+        font-size: 15px;
+        right: 17%;
+    }
+}
